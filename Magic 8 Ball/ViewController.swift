@@ -9,11 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+    @IBOutlet var AnswerImageView: UIImageView!
+    
+    @IBAction func AskQuestion(_ sender: UIButton) {
+        AnswerImageView.image = [#imageLiteral(resourceName: "ball5"), #imageLiteral(resourceName: "ball2"), #imageLiteral(resourceName: "ball4"), #imageLiteral(resourceName: "ball2"), #imageLiteral(resourceName: "ball3")].randomElement()
     }
-
-
 }
 
